@@ -1,6 +1,6 @@
 let lis = document.querySelectorAll("ul li");
 
-console.log(lis);
+// console.log(lis);
 
 lis.forEach((li) => {
   li.onclick = function () {
@@ -16,8 +16,27 @@ lis.forEach((li) => {
 let nav = document.querySelector("#sidebar");
 let btn = document.querySelector("#button");
 
-console.log(nav);
-console.log(btn);
+// console.log(nav);
+// console.log(btn);
+
 btn.addEventListener("click", () => {
   nav.classList.toggle("transform");
+  btn.classList.toggle("translate");
 });
+
+// Animation bubbles
+
+function bubbles() {
+  const col = document.getElementById("bubbles");
+  const dot = document.createElement("div");
+  const span = document.createElement("span");
+  const size = Math.random() * 60;
+  dot.className = "dot";
+  dot.appendChild(span);
+  col.appendChild(dot);
+
+  span.style.width = size + "px";
+  span.style.height = size + "px";
+  span.style.left = Math.random() * innerWidth + "px";
+}
+setInterval(bubbles, 1500);
