@@ -39,4 +39,5 @@ function bubbles() {
   span.style.height = size + "px";
   span.style.left = Math.random() * innerWidth + "px";
 }
-setInterval(bubbles, 1500);
+const time = Math.random() * 4000;
+setInterval(bubbles, time);

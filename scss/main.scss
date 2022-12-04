@@ -1,3 +1,5 @@
+// Main For The Home Page
+
 $mainColor: #efe6e6;
 $secondColor: #02242c;
 $thirdColor: #046880;
@@ -227,8 +229,8 @@ body {
                         -moz-border-radius: 50%;
                         -ms-border-radius: 50%;
                         -o-border-radius: 50%;
-                        animation: animate 5s linear infinite;
-                        -webkit-animation: animate 5s linear infinite;
+                        animation: animate 10s ease-in-out infinite;
+                        -webkit-animation: animate 10s ease-in-out infinite;
                     }
                 }
             }
@@ -259,6 +261,7 @@ body {
 
 @media (width < 768px) {
     .main {
+        padding-left: 0;
         button.translate {
             transform: translateX(270px);
             -webkit-transform: translateX(270px);
@@ -291,4 +294,11 @@ body {
     100% {
         bottom: 950px;
     }
-} ;
+}
+// span {
+//     animation: animate 10s ease-in-out infinite;
+//     -webkit-animation: animate 10s ease-in-out infinite;
+// }
+
+// Transition
+@import "transition";
