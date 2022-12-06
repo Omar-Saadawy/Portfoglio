@@ -12,7 +12,10 @@
 <body>
 
     <section class="main d-flex">
-        <nav class="sidebar"> 
+        <button type="button" class="collapse d-flex d-md-none btn" id="button">
+            <i class="fa-solid fa-bars text-white-50"></i>
+        </button>
+        <nav class="sidebar transform" id="sidebar"> 
             <div class="d-flex flex-column">
                 <div class="container-fluid p-3 d-flex justify-content-center">
                     <a href="#" class="navbar-brand">
@@ -21,8 +24,8 @@
                 </div>
                 <hr>
                 <ul class="list-unstyled py-5 px-2 text-center">
-                    <li class="text-decoration-none text-uppercase my-3 p-2">
-                        <a href="/home.html" class="text-decoration-none">
+                    <li class="text-decoration-none text-uppercase my-3 p-2 active">
+                        <a href="/index.html" class="text-decoration-none">
                             home
                         </a>    
                     </li>
@@ -31,7 +34,7 @@
                             about
                         </a>    
                     </li>
-                    <li class="text-decoration-none text-uppercase my-3 p-2 active">
+                    <li class="text-decoration-none text-uppercase my-3 p-2">
                         <a href="/resume.html" class="text-decoration-none">
                             resume
                         </a>    
@@ -47,12 +50,12 @@
                         </a>    
                     </li>
                 </ul>
-                <div class="d-flex justify-content-center align-items-end made">
+                <div class="d-flex justify-content-center align-items-center made">
                     <p class="text-capitalize text-white">
                         made with
                         <i class="fa-solid fa-heart"></i>
                         by 
-                        <a href="" class="text-decoration-none">omar saadawy</a>
+                        <a href="https://www.linkedin.com/in/omar-saadawy-7133271a5/" class="text-decoration-none">omar saadawy</a>
                     </p>
                 </div>
             </div>
