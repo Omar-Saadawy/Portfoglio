@@ -11,6 +11,9 @@
 </head>
 <body>
 
+    <!-- Transition Div -->
+    <!-- <div class="transition active"></div> -->
+
     <section class="main d-flex">
         <button type="button" class="collapse d-flex d-md-none btn" id="button">
             <i class="fa-solid fa-bars text-white-50"></i>
@@ -24,7 +27,7 @@
                 </div>
                 <hr>
                 <ul class="list-unstyled py-5 px-2 text-center">
-                    <li class="text-decoration-none text-uppercase my-3 p-2">
+                    <li class="text-decoration-none text-uppercase my-3 p-2 active">
                         <a href="/index.html" class="text-decoration-none">
                             home
                         </a>    
@@ -34,7 +37,7 @@
                             about
                         </a>    
                     </li>
-                    <li class="text-decoration-none text-uppercase my-3 p-2 active">
+                    <li class="text-decoration-none text-uppercase my-3 p-2">
                         <a href="/resume.html" class="text-decoration-none">
                             resume
                         </a>    
@@ -60,12 +63,47 @@
                 </div>
             </div>
         </nav>
-        <div>
-            resume
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center first">
+                <div class="col-10 text-center">
+                    <h2 class="h1 text-white">Hello, I am <span>Omar Saadawy</span></h2>
+                    <p class="text-white-50 p-3">
+                        I am Front-End Developer , I enjoy building and creating fully responsive static websites from small business sites to rich interactive websites
+                    </p>
+
+                    <div class="icons d-flex justify-content-center align-items-center">
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/omar-saadawy-7133271a5/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div class="icon">
+                            <a href="https://github.com/Omar-Saadawy">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+
+                        <div class="icon">
+                            <a href="/contact.html">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row second">
+                <div class="col-12 bubbles" id="bubbles">
+                </div>
+            </div>
         </div>
+
     </section>
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
